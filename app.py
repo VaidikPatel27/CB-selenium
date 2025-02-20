@@ -1,6 +1,8 @@
 import streamlit as st
 from functions import cb_find
 import pandas as pd
+import os
+os.system('playwright install')
 
 st.set_page_config(layout='wide')
 
