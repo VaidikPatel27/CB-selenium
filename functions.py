@@ -4,10 +4,6 @@ import streamlit as st
 import os
 start = time.time()
 
-if not os.path.exists("/root/.cache/ms-playwright"):
-    from playwright.sync_api import sync_playwright
-    sync_playwright().start().install()
-
 def cb_find(url, search_query):
     with sync_playwright() as p:
         # Configure for GitHub Actions (headless + browser setup)
