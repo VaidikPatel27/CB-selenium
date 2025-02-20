@@ -4,12 +4,6 @@ import streamlit as st
 
 start = time.time()
 
-def save_file(file):
-    if file is not None:
-        file_path = "Inputs/data.csv"
-        with open(file_path, "wb") as f:
-            pdf_bytes = f.write(file)
-
 def cb_find(url, search_query):
     with sync_playwright() as p:
         # Configure for GitHub Actions (headless + browser setup)

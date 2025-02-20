@@ -1,7 +1,6 @@
 import streamlit as st
-from functions import cb_find, save_file
+from functions import cb_find
 import pandas as pd
-import numpy as np
 
 st.set_page_config(layout='wide')
 
