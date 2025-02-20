@@ -1,6 +1,4 @@
-import os
-os.system('playwright install')
-os.system('sudo playwright install-deps')
+import test
 import streamlit as st
 from functions import cb_find
 import pandas as pd
