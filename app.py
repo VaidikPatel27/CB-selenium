@@ -64,7 +64,7 @@ if uploaded_csv:
             for i in range(0,new_df.shape[0]):
                 compare_url = new_df['compare_url'].iloc[i]
                 status = new_df['Status'].iloc[i]
-                placeholder.write(f"scanning row: {i}/{new_df.shape[0]}")
+                placeholder.write(f"scanning row: {i+1}/{new_df.shape[0]}")
                 if status in exist_statuses:
                     res = cb_find(compare_url, 'Emp Range Freshness Q1 2025 - verified')
                 elif status in not_exist_statuses:                    
